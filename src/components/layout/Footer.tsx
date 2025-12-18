@@ -10,13 +10,13 @@ const footerLinks = {
   ],
   coaches: [
     { name: "Become a Coach", href: "/become-coach" },
-    { name: "Coach Dashboard", href: "/coach/dashboard" },
+    // { name: "Coach Dashboard", href: "/coach/dashboard" },
     { name: "Resources", href: "/coach/resources" },
     { name: "Success Stories", href: "/coach/stories" },
   ],
   company: [
     { name: "About Us", href: "/about" },
-    { name: "Careers", href: "/careers" },
+    // { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
