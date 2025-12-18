@@ -16,6 +16,10 @@ import HowItWorks from "./pages/HowItWorks";
 import BecomeCoach from "./pages/BecomeCoach";
 import Resources from "./pages/Resources";
 import SuccessStories from "./pages/SuccessStories";
+import Blog from "./pages/Blog";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +45,10 @@ const App = () => (
           <Route path="/become-coach" element={<BecomeCoach />} />
           <Route path="/coach/resources" element={<Resources />} />
           <Route path="/coach/stories" element={<SuccessStories />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

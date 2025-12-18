@@ -107,7 +107,7 @@ const SuccessStories = () => {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <section className="pt-32 pb-20 bg-gradient-to-br from-primary/10 to-accent/5">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <motion.div
@@ -115,7 +115,7 @@ const SuccessStories = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+                <span className="inline-block px-4 py-2 bg-primary/5 text-primary rounded-full text-sm font-medium mb-6 border border-primary/10">
                   Success Stories
                 </span>
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
@@ -130,7 +130,7 @@ const SuccessStories = () => {
         </section>
 
         {/* Stats */}
-        <section className="py-12 bg-secondary/30">
+        <section className="py-12 bg-secondary/20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -174,7 +174,7 @@ const SuccessStories = () => {
                   <Card className="h-full flex flex-col">
                     <CardHeader>
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xl font-bold text-primary-foreground">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/90 to-primary flex items-center justify-center text-xl font-bold text-primary-foreground">
                           {story.image}
                         </div>
                         <div>
@@ -187,7 +187,7 @@ const SuccessStories = () => {
                         {[...Array(5)].map((_, i) => (
                           <Star 
                             key={i} 
-                            className={`w-4 h-4 ${i < Math.floor(story.rating) ? 'fill-primary text-primary' : 'text-muted'}`} 
+                            className={`w-4 h-4 ${i < Math.floor(story.rating) ? 'fill-primary text-primary' : 'text-muted-foreground'}`} 
                           />
                         ))}
                         <span className="text-sm text-muted-foreground ml-2">{story.rating}</span>
@@ -199,7 +199,7 @@ const SuccessStories = () => {
                     </CardHeader>
                     
                     <CardContent className="flex-grow">
-                      <div className="bg-primary/10 rounded-lg p-4 mb-6">
+                      <div className="bg-primary/5 rounded-lg p-4 mb-6 border border-primary/10">
                         <Quote className="w-8 h-8 text-primary mb-3" />
                         <p className="text-foreground italic">"{story.testimonial}"</p>
                       </div>
@@ -210,7 +210,7 @@ const SuccessStories = () => {
                           <span className="text-sm">{story.achievement}</span>
                         </div>
                         <div className="flex items-center">
-                          <TrendingUp className="w-5 h-5 text-primary mr-3" />
+                          <TrendingUp className="w-5 h-5 text-accent mr-3" />
                           <span className="text-sm">{story.revenue}</span>
                         </div>
                         <div className="flex items-center">
@@ -227,7 +227,7 @@ const SuccessStories = () => {
         </section>
 
         {/* Journey Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+        <section className="py-20 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -238,20 +238,20 @@ const SuccessStories = () => {
               </p>
               
               <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="bg-white/10 rounded-2xl p-6">
-                  <Target className="w-12 h-12 mb-4 mx-auto" />
+                <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-white">
+                  <Target className="w-12 h-12 mb-4 mx-auto text-white" />
                   <h3 className="text-xl font-bold mb-2">Define Your Niche</h3>
                   <p>Create your profile and specialize in your passion area</p>
                 </div>
                 
-                <div className="bg-white/10 rounded-2xl p-6">
-                  <Award className="w-12 h-12 mb-4 mx-auto" />
+                <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-white">
+                  <Award className="w-12 h-12 mb-4 mx-auto text-white" />
                   <h3 className="text-xl font-bold mb-2">Develop Expertise</h3>
                   <p>Access exclusive resources and training programs</p>
                 </div>
                 
-                <div className="bg-white/10 rounded-2xl p-6">
-                  <TrendingUp className="w-12 h-12 mb-4 mx-auto" />
+                <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-white">
+                  <TrendingUp className="w-12 h-12 mb-4 mx-auto text-white" />
                   <h3 className="text-xl font-bold mb-2">Expand Globally</h3>
                   <p>Connect with clients worldwide and scale your impact</p>
                 </div>
